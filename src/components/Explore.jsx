@@ -8,7 +8,6 @@ function Explore({ selectedAnime }) {
   
   useEffect(() => {
     const imageUrl = `${selectedAnime.carousel.replace(/\s/g, '%20')}`; //Image URL Encoding
-    console.log("Setting Background Image Path:", imageUrl);
     setBackgroundImage(imageUrl);
   }, [selectedAnime]);
 

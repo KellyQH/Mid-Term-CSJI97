@@ -4,7 +4,7 @@ import NewReleaseSection from "./components/NewRelease";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Explore from "./components/Explore";
-import data from "./components/data.json";
+import data from "./components/data";
 
 function App() {
   // State to manage the selected anime

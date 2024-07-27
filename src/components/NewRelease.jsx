@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Slider from "react-slick";
-import data from "./data.json";
+import data from "./data";
 import PropTypes from "prop-types"; //import PropTypes library
 
 function NewReleaseSection({ setSelectedAnime }) {

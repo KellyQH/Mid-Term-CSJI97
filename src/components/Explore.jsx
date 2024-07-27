@@ -2,11 +2,13 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 
 
+
 function Explore({ selectedAnime }) {
   const [backgroundImage, setBackgroundImage] = useState("");
-
+  
   useEffect(() => {
-    setBackgroundImage(`../../scr/assets/${selectedAnime.carousel}`);
+    // Remove the dot before 'images/'
+    setBackgroundImage(`/images/${selectedAnime.carousel}`);
   }, [selectedAnime]);
 
   return (

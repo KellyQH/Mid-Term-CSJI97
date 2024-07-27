@@ -7,5 +7,6 @@ export default defineConfig({
   base: '/Mid-Term-CSJI97/',
   build: {
     outDir: 'dist', // Output directory
+    publicDir: 'public',
     }
 });

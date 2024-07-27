@@ -25,7 +25,7 @@ function NewReleaseSection({ setSelectedAnime }) {
             onClick={() => setSelectedAnime(release)}
           >
             <img
-              src={release.image}
+              src={import.meta.env.PUBLIC_URL + release.image} // Use this to access images from public directory
               alt={release.movieName}
               className="rounded-lg w-full"
             />

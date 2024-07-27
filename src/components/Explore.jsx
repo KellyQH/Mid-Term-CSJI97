@@ -1,15 +1,12 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 
+
 function Explore({ selectedAnime }) {
   const [backgroundImage, setBackgroundImage] = useState("");
 
   useEffect(() => {
-    // Dynamically import the image
-    //import() function returns a Promise
-    import(`../../src/assets/${selectedAnime.carousel}`)
-      .then((module) => setBackgroundImage(module.default))
-      .catch((error) => console.error(error));
+    setBackgroundImage(`../../scr/assets/${selectedAnime.carousel}`);
   }, [selectedAnime]);
 
   return (

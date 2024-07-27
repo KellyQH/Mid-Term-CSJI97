@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Slider from "react-slick";
 import data from "./data.json";
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"; //import PropTypes library
 
 function NewReleaseSection({ setSelectedAnime }) {
   const [slides] = useState(data.data);
@@ -21,7 +21,7 @@ function NewReleaseSection({ setSelectedAnime }) {
         {slides.map((release) => (
           <div
             key={release.id}
-            className="bg-gray-800 rounded-lg p-4 cursor-pointer"
+            className="rounded-lg p-4 cursor-pointer"
             onClick={() => setSelectedAnime(release)}
           >
             <img
@@ -42,6 +42,7 @@ function NewReleaseSection({ setSelectedAnime }) {
   );
 }
 
+//setSelectedAnime prop is required and should be a function
 NewReleaseSection.propTypes = {
   setSelectedAnime: PropTypes.func.isRequired,
 };

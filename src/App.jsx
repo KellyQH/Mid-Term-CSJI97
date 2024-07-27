@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       <Header />
-      <main className="container mx-auto p-4">
+      <main className="container mx-auto px-16 py-4">
         <Explore selectedAnime={selectedAnime} />
         <NewReleaseSection setSelectedAnime={setSelectedAnime} />
       </main>
